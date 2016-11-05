@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Auto Flick Sun Lamp Switch</name>
+	<author>Zhentar</author>
+	<url></url>
+	<targetVersion>0.15.1284</targetVersion>
+	<description>
+    Adds an option to sun lamps and power switches to automatically flag themselves to be flicked on in the morning and off at night.
+  </description>
+</ModMetaData>
