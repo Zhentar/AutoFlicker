@@ -28,6 +28,7 @@
       </damageData>
     </graphicData>
     <building>
+      <ai_chillDestination>false</ai_chillDestination>
       <ignoreNeedsPower>true</ignoreNeedsPower>
       <allowWireConnection>false</allowWireConnection>
     </building>
@@ -36,7 +37,7 @@
     <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
     <statBases>
       <MaxHitPoints>120</MaxHitPoints>
-      <WorkToMake>200</WorkToMake>
+      <WorkToBuild>200</WorkToBuild>
       <Flammability>0.4</Flammability>
       <Beauty>-2</Beauty>
     </statBases>
@@ -93,7 +94,7 @@
     </comps>
     <statBases>
       <MaxHitPoints>50</MaxHitPoints>
-      <WorkToMake>170</WorkToMake>
+      <WorkToBuild>170</WorkToBuild>
       <Flammability>1.0</Flammability>
     </statBases>
     <researchPrerequisites>
@@ -111,7 +112,8 @@
     </graphicData>
     <blockWind>true</blockWind>
     <statBases>
-      <WorkToMake>330</WorkToMake>
+      <WorkToBuild>330</WorkToBuild>
+      <Mass>4.5</Mass>
     </statBases>
     <costList>
       <Steel>25</Steel>

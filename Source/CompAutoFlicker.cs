@@ -58,12 +58,12 @@ namespace AutoFlicker
 
             bool? wantsFlickOn = null;
 
-            if (!hasFlickedOnToday && GenDate.CurrentDayPercent > this.Props.flickOnPercent)
+            if (!hasFlickedOnToday && GenLocalDate.DayPercent(this.parent.Map) > this.Props.flickOnPercent)
             {
                 wantsFlickOn = true;
                 hasFlickedOnToday = true;
             }
-            if (!hasFlickedOffToday && GenDate.CurrentDayPercent > this.Props.flickOffPercent)
+            if (!hasFlickedOffToday && GenLocalDate.DayPercent(this.parent.Map) > this.Props.flickOffPercent)
             {
                 wantsFlickOn = false;
                 hasFlickedOffToday = true;
@@ -98,7 +98,7 @@ namespace AutoFlicker
             Scribe_Values.LookValue(ref this.hasFlickedOffToday, nameof(this.hasFlickedOffToday), false);
         }
 
-        public override IEnumerable<Command> CompGetGizmosExtra()
+        public override IEnumerable<Gizmo> CompGetGizmosExtra()
         {
             foreach (var c in base.CompGetGizmosExtra())
             {
