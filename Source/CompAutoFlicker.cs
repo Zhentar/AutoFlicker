@@ -47,7 +47,7 @@ namespace AutoFlicker
 
         private void CheckDesignateFlick()
         {
-            if (!enabled) { return; }
+            if (!enabled || !parent.Spawned) { return; }
 
             if (GenDate.DaysPassed > this.currDaysPassed)
             {
@@ -110,7 +110,7 @@ namespace AutoFlicker
                 {
                     hotKey = KeyBindingDefOf.CommandItemForbid,
                     icon = TexCommand.Forbidden,
-                    defaultLabel = "Auto Flicking",
+                    defaultLabel = "Day/Night Flicking",
                     defaultDesc = "Automatically instructs Pawns to flick on during the day and off at night",
                     isActive = () => this.enabled,
                     toggleAction = () => this.enabled = !this.enabled
